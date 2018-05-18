@@ -20,6 +20,10 @@ p {
   letter-spacing: -1px;
 }
 
+.modal-body {
+  background: #777;
+}
+
 #padd {
   padding-bottom: 0px;
 }
@@ -49,6 +53,17 @@ p {
 /*containers feature*/
 .featurette-divider {
   margin: 3rem 0;
+}
+.modal-header {
+  border: none;
+}
+.modal-footer {
+  text-align: left;
+}
+
+.modal-body {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 
 @media (min-width: 40em) {
