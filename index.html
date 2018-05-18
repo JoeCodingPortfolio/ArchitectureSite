@@ -12,6 +12,7 @@
   <!-- Custom styles for this template -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -32,10 +33,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
@@ -88,56 +89,84 @@
     <!--End Of The Carousel Code-->
 
     <!--About section start-->
-    <div id="padd" class="container marketing">
-      <hr class="featurette-divider">
-      <div id="about" class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">About The Company</h2>
-          <h4> The company was formed in 0000 by jane doe </h4>
-          <p>Professional web design by joseph freeman</p>
+    <section id="About">
+      <div id="padd" class="container marketing">
+        <hr class="featurette-divider">
+        <div id="about" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">About The Company</h2>
+            <h4> The company was formed in 0000 by jane doe </h4>
+            <p>Professional web design by joseph freeman</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="./images/image-placeholder-500x500.jpg">
+          </div>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="./images/image-placeholder-500x500.jpg">
-        </div>
-      </div>
-      <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-    </div>
+      </div>
+    </section>
     <!--About Section End-->
 
     <!--Client Portfolio Start-->
-    <div id="padd" class="container marketing">
-      <div id="about" class="row featurette">
-        <div class="card" style="width: 14rem">
-          <img class="card-img-top" src="./images/download.svg" alt="Card Image">
-          <div class="card-body">
-            <h5 class="card-title">Byron House</h5>
-            <p class="card-body">Previous client </p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ByronModal">Byron House</button>
+    <section id="Portfolio">
+      <div id="padd" class="container marketing">
+        <div id="about" class="row featurette">
+          <div class="card" style="width: 14rem">
+            <img class="card-img-top" src="./images/download.svg" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Byron House</h5>
+              <p class="card-body">Previous client </p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ByronModal">Byron House</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="ByronModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h4 class="modal-title">Byron House</h4>
-          </div>
-          <div class="modal-body">
-            <img src="images/ChurchLukas_Byron_01_B-2000x1000.jpg">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <!-- Modal -->
+      <div class="modal fade" id="ByronModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">Byron House</h4>
+            </div>
+            <div class="modal-body">
+              <img src="images/ChurchLukas_Byron_01_B-2000x1000.jpg">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!--End Of Portfolio-->
 
+    <!--Start Of Contact Us-->
+    <section>
+      <div id="ContUs">
+        <hr class="featurette-divider">
+        <div class="container">
+          <div class="row-fluid">
+            <div id="address" class="col-md-12">
+              <address>
+                <strong>Example Inc.</strong>
+                <br> 1234 Example Street
+                <br> Antartica, Example 0987
+                <br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+              </address>
+              <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7245780.082381814!2d-88.29713116153964!3d27.53212533124578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c1766591562abf%3A0xf72e13d35bc74ed0!2sFlorida!5e0!3m2!1sen!2s!4v1470659148428"
+                  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
   </main>
 
 
@@ -145,7 +174,7 @@
 
 
   <!-- Scripts At End Increase The Sites Performance-->
-
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
