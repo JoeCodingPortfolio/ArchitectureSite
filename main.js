@@ -1,21 +1,16 @@
-function initialize() {
-  var mapOptions = {
-    center: new google.maps.LatLng(28.1823294, -82.352912),
-    zoom: 9,
-    mapTypeId: google.maps.MapTypeId.HYBRID,
-    scrollwheel: false,
-    draggable: false,
-    panControl: true,
-    zoomControl: true,
-    mapTypeControl: true,
-    scaleControl: true,
-    streetViewControl: true,
-    overviewMapControl: true,
-    rotateControl: true
-  };
-  var map = new google.maps.Map(
-    document.getElementById("map-canvas"),
-    mapOptions
-  );
-}
-google.maps.event.addDomListener(window, "load", initialize);
+jQuery(function($) {
+  function init_map1() {
+    var myLocation = new google.maps.LatLng(52.9532155, -1.1458985);
+    var mapOptions = {
+      center: myLocation,
+      zoom: 16
+    };
+    var marker = new google.maps.Marker({
+      position: myLocation,
+      title: "Property Location"
+    });
+    var map = new google.maps.Map(document.getElementById("map1"), mapOptions);
+    marker.setMap(map);
+  }
+  init_map1();
+});

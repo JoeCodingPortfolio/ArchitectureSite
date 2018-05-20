@@ -66,7 +66,7 @@ p {
   overflow-y: auto;
 }
 
-#address {
+.addr {
   text-align: right;
   right: 0px;
   padding: 10px;
@@ -76,25 +76,46 @@ p {
   margin-top: 0px;
 }
 
-#ContUs {
+#ContactUs {
   background: #777;
 }
 
-.iframe-container {
-  position: left;
-  top: -12px;
-  bottom: -12px;
-  left: -12px;
+.map {
+  min-width: 300px;
+  min-height: 300px;
   width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
 }
-.iframe-container > * {
-  display: block;
-  position: relative;
-  top: -12px;
-  bottom: -12px;
-  left: -12px;
+.card {
+  top: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#card {
+  background: #777;
+  border-color: #777;
+}
+.card-body {
+  border: 0px;
+  padding: 0px;
+}
+#google {
+  border: 0px;
+  padding: 0px;
+  background: #777;
+  border-color: #777;
 }
 
+.contact {
+  color: #ffa500;
+  font-family: "Roboto", sans-serif;
+}
+
+.media-container-column > * {
+  width: 100%;
+}
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {
