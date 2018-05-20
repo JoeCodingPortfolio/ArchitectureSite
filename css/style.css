@@ -107,7 +107,23 @@ p {
   background: #777;
   border-color: #777;
 }
+.footer {
+  background: #777;
+  color: #ffa500;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+#full {
+  background: #777;
+}
 
+#foot {
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  background-color: #000;
+  align-content: center;
+}
 .contact {
   color: #ffa500;
   font-family: "Roboto", sans-serif;
